@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Numan Vaccine</string>
+    <string name="welcome">Welcome!</string>
+    <string name="generic_error_message">Something has gone wrong!</string>
+    <string name="favorite_countries">Favourite Countries</string>
+    <string name="country_collections">Country Collections</string>
+    <string name="transition_name">image_transition</string>
+    <string name="label_administered">Administered</string>
+    <string name="label_people_vaccinated">Vaccinated</string>
+    <string name="label_country">Country</string>
+    <string name="label_capital">Capital</string>
+    <string name="label_region">Region</string>
+    <string name="label_population">Population</string>
+    <string name="label_area">Area(km^2)</string>
+    <string name="label_languages">Languages</string>
+    <string name="more_details"><u>More Details</u></string>
+    <string name="please_refresh_view">Please refresh view!</string>
+</resources>

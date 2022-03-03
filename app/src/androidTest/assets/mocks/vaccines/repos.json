@@ -1,0 +1,38 @@
+{
+   "Afghanistan":{
+      "All":{
+         "administered":5535254,
+         "people_vaccinated":4231984,
+         "people_partially_vaccinated":4907058,
+         "country":"Afghanistan",
+         "population":35530081,
+         "sq_km_area":652090,
+         "life_expectancy":"45.9",
+         "elevation_in_meters":null,
+         "continent":"Asia",
+         "abbreviation":"AF",
+         "location":"Southern and Central Asia",
+         "iso":4,
+         "capital_city":"Kabul",
+         "updated":"2022/03/02 00:00:00+00"
+      }
+   },
+   "Albania":{
+      "All":{
+         "administered":2707658,
+         "people_vaccinated":1196277,
+         "people_partially_vaccinated":1269746,
+         "country":"Albania",
+         "population":2930187,
+         "sq_km_area":28748,
+         "life_expectancy":"71.6",
+         "elevation_in_meters":null,
+         "continent":"Europe",
+         "abbreviation":"AL",
+         "location":"Southern Europe",
+         "iso":8,
+         "capital_city":"Tirana",
+         "updated":"2022/03/02 00:00:00+00"
+      }
+   }
+}

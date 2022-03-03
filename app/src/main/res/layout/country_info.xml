@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondary">
+
+    <LinearLayout
+        android:id="@+id/capital_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/area_info"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/countryHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_country" />
+
+        <TextView
+            android:id="@+id/countryView"
+            style="@style/valueTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="UK" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/region_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/capital_info"
+        app:layout_constraintStart_toStartOf="@+id/pop_info"
+        app:layout_constraintTop_toTopOf="@id/capital_info">
+
+        <TextView
+            android:id="@+id/regionHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_region" />
+
+        <TextView
+            android:id="@+id/regionView"
+            style="@style/valueTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Europe" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/divider_top"
+        layout="@layout/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capital_info" />
+
+
+    <LinearLayout
+        android:id="@+id/area_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/curr_info"
+        app:layout_constraintTop_toBottomOf="@id/divider_top">
+
+        <TextView
+            android:id="@+id/areaHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_area" />
+
+        <TextView
+            android:id="@+id/areaView"
+            style="@style/valueTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 243 24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/area_info"
+        app:layout_constraintStart_toStartOf="@+id/lang_info"
+        app:layout_constraintTop_toTopOf="@id/area_info">
+
+        <TextView
+            android:id="@+id/populationHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_population" />
+
+        <TextView
+            android:id="@+id/populationView"
+            style="@style/valueTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 243 24" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/divider_bottom"
+        layout="@layout/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/area_info" />
+
+
+    <LinearLayout
+        android:id="@+id/curr_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lang_info"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom">
+
+        <TextView
+            android:id="@+id/administeredHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_administered" />
+
+        <TextView
+            android:id="@+id/administeredView"
+            style="@style/valueTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24234" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lang_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/curr_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/curr_info"
+        app:layout_constraintTop_toTopOf="@id/curr_info">
+
+        <TextView
+            android:id="@+id/peopleVaccinatedHeading"
+            style="@style/labelTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_people_vaccinated" />
+
+        <TextView
+            android:id="@+id/peopleVaccinatedView"
+            style="@style/valueTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5754" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

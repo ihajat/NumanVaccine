@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.example.numanvaccine.presentation.ui.recipecollection.CountriesFragment"
+        android:label="Countries" >
+        <action
+            android:id="@+id/action_countriesFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.numanvaccine.presentation.ui.recipefavourites.FavouriteListFragment"
+        android:label="Favourites" >
+        <action
+            android:id="@+id/action_favouriteListFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.numanvaccine.presentation.title.TitleFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/detailedFragment"
+        android:name="com.example.numanvaccine.presentation.detailed.DetailedFragment"
+        android:label="Details" >
+        <argument
+            android:name="country"
+            app:argType="com.example.numanvaccine.domain.model.Country" />
+    </fragment>
+</navigation>
